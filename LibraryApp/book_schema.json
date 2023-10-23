@@ -1,0 +1,34 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "tag": {
+            "type": "string",
+            "enum": ["Python", "C++", "JavaScript", "Java"]
+        },
+        "author_name": {
+            "type": "string"
+        },
+        "file": {
+            "type": "object",
+            "properties": {
+                "filename": {
+                    "type": "string"
+                },
+                "originalName": {
+                    "type": "string"
+                },
+                "contentType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "required": ["name", "author_name"]
+}
+
